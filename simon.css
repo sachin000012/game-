@@ -51,52 +51,56 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
-
-#instruction-button {
-  margin: 25px;
-  padding: 10px 20px;
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: white;
-  color: black;
-  font-size: 1.2rem;
-  cursor: pointer;
+body {
+  text-align: center;
+  background-color: #011F3F;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.modal-content {
-  background-color: white;
-  padding: 20px;
-  margin: 10% auto;
-  width: 50%;
-}
-
-.close {
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#instruction-title {
+#level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 2rem;
-  margin-top: 10%;
+  font-size: 3rem;
+  margin:  5%;
   color: #FEF2BF;
 }
 
-.instruction {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
 }
