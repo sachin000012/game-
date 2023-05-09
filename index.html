@@ -1,32 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Simon Game</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  </head>
-  <body>
-    <h1 id="level-title">Press A Key to Start</h1>
-    <h2 id="instruction-title" style="display: none;">Instructions</h2>
-    <div class="container">
-      <div class="row">
-        <div type="button" id="green" class="btn green"></div>
-        <div type="button" id="red" class="btn red"></div>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="simon.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+    <div lass="row">
+
+      <div type="button" id="green" class="btn green">
+
       </div>
-      <div class="row">
-        <div type="button" id="yellow" class="btn yellow"></div>
-        <div type="button" id="blue" class="btn blue"></div>
-      </div>
-    </div>
-    <button id="instruction-button" class="btn instruction">Instructions</button>
-    <div id="instructions-modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>If you start the game, any of the tiles will flicker. You have to click that tile. After that, another tile will flicker. First, you have to click the previous tile, then click the present tile that flickers. It may not flicker only once every time, it can flicker multiple times. You have to remember the pattern. As you go from level to level, the patterns get more complicated and at some point, you're going to screw up and it will tell you that you got it wrong and the game is over. You can press any key to restart the game.</p>
+
+      <div type="button" id="red" class="btn red">
+
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="game.js"></script>
-  </body>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="simon.js" charset="utf-8"></script>
+
+</body>
+
 </html>
