@@ -90,6 +90,7 @@ function pressA(key){
         default : $("#level-title").text("incorrect input");
 	}
 }
+
 $("#instruction-button").click(function() {
 	alert("When you start the game, one of the tiles will flicker. Remember the color of the flickering tile and click on it. After you click on the correct tile, another tile will flicker. Remember the sequence of colors and click on the tiles in the same order. Each time you click on the correct sequence, the game will advance to the next level. If you click on the wrong tile, the game will be over. Good luck!");
   });
