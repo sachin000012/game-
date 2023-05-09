@@ -90,3 +90,16 @@ function pressA(key){
         default : $("#level-title").text("incorrect input");
 	}
 }
+$("#instructions-btn").click(function() {
+  $("#instructions-modal").css("display", "block");
+});
+
+$(".close").click(function() {
+  $("#instructions-modal").css("display", "none");
+});
+
+$(window).click(function(event) {
+  if (event.target == $("#instructions-modal")[0]) {
+    $("#instructions-modal").css("display", "none");
+  }
+});
