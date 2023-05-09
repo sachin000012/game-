@@ -10,7 +10,6 @@ var level = 0;
 $("body").keypress(function(event){
     pressA(event.key);
 });
-
 function nextSequence(){
 	userClickedPattern=[];
 	level++;
@@ -22,11 +21,11 @@ function nextSequence(){
     $("#"+randomChoosenColour).fadeIn().fadeOut().fadeIn();
     playSound(randomChoosenColour);
 }
-
 function playSound(name){
    var audio = new Audio(name + ".mp3");
    audio.play();
 }
+
 
 $(".btn").click(function(){
 	userChoosenColour = $(this).attr("id");
@@ -34,8 +33,8 @@ $(".btn").click(function(){
 	playSound(userChoosenColour);
 	animatePress(userChoosenColour);
 	checkAnswer(userClickedPattern.length-1);
-});
 
+});
 function animatePress(checkColour){
 	$("#"+checkColour).addClass("pressed");
 	setTimeout(function(){
@@ -43,9 +42,11 @@ function animatePress(checkColour){
 	},100);
 }
 
+
 function checkAnswer(currentlevel){
     if (gamePattern[currentlevel]===userClickedPattern[currentlevel]) {
     	 if (userClickedPattern.length===gamePattern.length) {
+
     	 	setTimeout(function(){
     	 		nextSequence();
     	 	},1000);
@@ -77,6 +78,7 @@ function  repeat(){
         });
 }
 
+
 function pressA(key){
 	switch(key){
 		case "a" :  if(started===false){
@@ -88,17 +90,3 @@ function pressA(key){
         default : $("#level-title").text("incorrect input");
 	}
 }
-
-$("#instruction-button").click(function() {
-  $("#instructions-modal").show();
-});
-
-$(".close").click(function() {
-  $("#instructions-modal").hide();
-});
-
-$(window).click(function(event) {
-  if (event.target == $("#instructions-modal")[0]) {
-    $("#instructions-modal").hide();
-  }
-});
