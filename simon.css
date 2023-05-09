@@ -52,7 +52,7 @@ body {
   background-color: grey;
 }
 
-#instructions-btn {
+#instruction-button {
   margin: 25px;
   padding: 10px 20px;
   border: 2px solid black;
@@ -61,7 +61,6 @@ body {
   color: black;
   font-size: 1.2rem;
   cursor: pointer;
-
 }
 
 .modal {
@@ -87,4 +86,17 @@ body {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+}
+
+#instruction-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin-top: 10%;
+  color: #FEF2BF;
+}
+
+.instruction {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
 }
